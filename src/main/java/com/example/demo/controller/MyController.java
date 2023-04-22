@@ -26,6 +26,8 @@ public class MyController {
 
 	@PostMapping("/save")
 	public String saveemployee(@ModelAttribute Employee employee, Model model) {
+
+            String name;
 		System.out.println("in show" + employee.toString());
 		Integer eid = service.saveEmpolyee(employee);
 		String message = "Employee '" + eid + "' Employee";
